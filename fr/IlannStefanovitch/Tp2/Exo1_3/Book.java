@@ -1,7 +1,5 @@
-package fr.IlannStefanovitch.Tp2;
+package fr.IlannStefanovitch.Tp2.Exo1_3;
 
-
-import java.util.Arrays;
 
 public class Book {
     private String name;

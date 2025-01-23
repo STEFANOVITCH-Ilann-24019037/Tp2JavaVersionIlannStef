@@ -1,4 +1,4 @@
-package fr.IlannStefanovitch.Tp2;
+package fr.IlannStefanovitch.Tp2.Exo1_3;
 
 public class Exo {
 
