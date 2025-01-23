@@ -1,6 +1,6 @@
 package fr.IlannStefanovitch.Tp2.Exo1_3;
 
-public class Exo {
+public class Exo1_3 {
 
     public static void main(String[] args) {
        //exo1();
@@ -23,9 +23,9 @@ public class Exo {
         System.out.printf("circumference is: %.2f%n", c1.getCircumference());
     }
     public static void exo2 () {
-        Author[] authors = {
-                new Author("Tan Ah Teck", "ahTeck@somewhere.com", 'm'),
-                new Author("Paul Tan", "paulTan@nowhere.com", 'm')
+        Author1[] authors = {
+                new Author1("Tan Ah Teck", "ahTeck@somewhere.com", 'm'),
+                new Author1("Paul Tan", "paulTan@nowhere.com", 'm')
         };
 
         Book javaDummy = new Book("Java for Dummy", authors, 19.95, 88);
@@ -42,7 +42,7 @@ public class Exo {
         System.out.println(javaDummy);  // toString()
 
         // Test authors
-        for (Author author : javaDummy.getAuthor()) {
+        for (Author1 author : javaDummy.getAuthor()) {
             System.out.println(author);
         }
     }

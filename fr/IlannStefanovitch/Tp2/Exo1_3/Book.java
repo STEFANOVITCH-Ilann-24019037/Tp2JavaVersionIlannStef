@@ -3,17 +3,17 @@ package fr.IlannStefanovitch.Tp2.Exo1_3;
 
 public class Book {
     private String name;
-    private Author[] authors;
+    private Author1[] authors;
     private double price;
     private int qty = 0;
 
-    public Book(String name, Author[] authors, double price) {
+    public Book(String name, Author1[] authors, double price) {
         this.name = name;
         this.authors = authors;
         this.price = price;
 
     }
-    public Book(String name, Author[] author, double price, int qty) {
+    public Book(String name, Author1[] author, double price, int qty) {
         this.name = name;
         this.authors = author;
         this.price = price;
@@ -22,7 +22,7 @@ public class Book {
     public String getName() {
         return name;
     }
-    public Author[] getAuthor() {
+    public Author1[] getAuthor() {
         return authors;
     }
     public double getPrice() {
