@@ -1,11 +1,13 @@
 package fr.IlannStefanovitch.Tp2.Exo3;
+
+import java.math.BigInteger;
 import java.util.Scanner;
 
 
 public class Exo3
 {
         public static void  main (String [] args) {
-        MyComplexApp();
+            TestTime();
         }
         public static void test () {
             MyComplex myComplex = new MyComplex(1.0,2.0);
@@ -20,7 +22,7 @@ public class Exo3
             System.out.println(myComplex.getImag() +" "+myComplex.getReal());
             System.out.println(myComplex.magnitude());
         }
-        public static void MyComplexApp (){
+        public static void MyComplexApp () {
             MyComplex complex1 = new MyComplex();
             MyComplex complex2 = new MyComplex();
             Scanner input = new Scanner(System.in);
@@ -68,4 +70,44 @@ public class Exo3
 
 
         }
+        public static void MyPolynomial () {
+            Scanner input = new Scanner(System.in);
+            MyPolynomial p1 = new MyPolynomial(1.1, 2.2, 3.3);
+            System.out.println("Enter polynomial 1 (polynomial 1): ");
+            MyPolynomial p2 = new MyPolynomial(input.nextDouble(),input.nextDouble(),input.nextDouble());
+
+            System.out.println("p1: " + p1);
+            System.out.println("p2: " + p2);
+
+            System.out.println("Degree of p1: " + p1.getDegree());
+            System.out.println("Degree of p2: " + p2.getDegree());
+
+            System.out.println("p1 evaluated at 2: " + p1.evaluate(2));
+            System.out.println("p2 evaluated at 3: " + p2.evaluate(3));
+
+            MyPolynomial p3 = p1.add(p2);
+            System.out.println("p1 + p2: " + p3);
+
+            MyPolynomial p4 = p1.multiply(p2);
+            System.out.println("p1 * p2: " + p4);
+
+        }
+
+    public static void TestBigInteger() {
+        BigInteger i1 = new BigInteger("11111111111111111111111111111111111111111111111111111111111111");
+        BigInteger i2 = new BigInteger("22222222222222222222222222222222222222222222222222");
+        System.out.println(i1.add(i2));
+        System.out.println(i1.multiply(i2));
+
+    }
+    public static void TestTime() {
+            MyTime myTime = new MyTime();
+            System.out.println(myTime.toString());
+            myTime.setTime(24,5,40);
+            System.out.println(myTime.toString());
+            myTime.nexSecond();
+            System.out.println(myTime.toString());
+            myTime.previousSecond();
+            System.out.println(myTime.toString());
+    }
 }
