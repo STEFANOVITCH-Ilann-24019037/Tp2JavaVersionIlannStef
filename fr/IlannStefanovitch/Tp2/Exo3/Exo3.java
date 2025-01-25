@@ -1,13 +1,14 @@
 package fr.IlannStefanovitch.Tp2.Exo3;
 
 import java.math.BigInteger;
+import java.util.Date;
 import java.util.Scanner;
 
 
 public class Exo3
 {
         public static void  main (String [] args) {
-            TestTime();
+            TestDate();
         }
         public static void test () {
             MyComplex myComplex = new MyComplex(1.0,2.0);
@@ -109,5 +110,11 @@ public class Exo3
             System.out.println(myTime.toString());
             myTime.previousSecond();
             System.out.println(myTime.toString());
+    }
+    public static void TestDate() {
+            Date date;
+        date = new Date(2000,0,15);
+
+        System.out.println(date.toString());
     }
 }
