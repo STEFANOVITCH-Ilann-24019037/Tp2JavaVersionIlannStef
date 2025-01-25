@@ -1,6 +1,7 @@
 package fr.IlannStefanovitch.Tp2.Exo3;
 
 public class MyComplex {
+
     private double real = 0;
     private double imag = 0;
 

@@ -28,8 +28,7 @@ public class Exo3
             complex1.setReal(input.nextDouble());
             complex1.setImag(input.nextDouble());
             System.out.println("Enter complex number 2 (complex 2): ");
-            complex2.setReal(input.nextDouble());
-            complex2.setImag(input.nextDouble());
+            complex2.setValue(input.nextDouble(),input.nextDouble());
             System.out.println("Number 1 is : " +complex1.toString());
             if (complex1.isReal()){
                 System.out.println(complex1.toString() +" is a 100% real ");
