@@ -1,4 +1,5 @@
-package fr.IlannStefanovitch.Tp2.Exo1_3;
+package fr.IlannStefanovitch.Tp2.Exo3;
+
 
 public class Ball {
     private float x;
@@ -58,3 +59,4 @@ public class Ball {
         return "ball [x=" + x + ", y=" + y + "speed = ( "+xDelta+yDelta + " ) ]";
     }
 }
+
